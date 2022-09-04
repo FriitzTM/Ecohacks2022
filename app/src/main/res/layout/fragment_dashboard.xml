@@ -7,8 +7,8 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="834dp"
+        android:layout_width="412dp"
+        android:layout_height="905dp"
         android:layout_marginTop="201dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
