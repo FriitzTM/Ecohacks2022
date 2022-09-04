@@ -24,11 +24,13 @@ public class DashboardFragment extends Fragment {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView totalEmissionPoints = binding.tEmissionPoints;
+        dashboardViewModel.setPoints();
+
+        TextView totalEmissionPoints = binding.tEmissionPoints;
         dashboardViewModel.getEmissionPoints().observe(getViewLifecycleOwner(), totalEmissionPoints::setText);
-        final TextView totalCovidPoints= binding.tCovidPoints;
+        TextView totalCovidPoints= binding.tCovidPoints;
         dashboardViewModel.getCovidPoints().observe(getViewLifecycleOwner(), totalCovidPoints::setText);
-        final TextView totalOverallPoints= binding.tTotalPoints;
+        TextView totalOverallPoints= binding.tTotalPoints;
         dashboardViewModel.getTotalPoints().observe(getViewLifecycleOwner(), totalOverallPoints::setText);
         return root;
     }

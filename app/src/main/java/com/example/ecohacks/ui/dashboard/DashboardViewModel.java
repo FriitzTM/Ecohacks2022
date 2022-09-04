@@ -38,45 +38,32 @@ import java.io.IOException;
 public class DashboardViewModel extends ViewModel {
 
 
-    private final MutableLiveData<String> mEmissionPoints;
-    private int iEmissionPoints;
-    private final MutableLiveData<String> mCovidPoints;
-    private int iCovidPoints;
-    private final MutableLiveData<String> mTotalPoints;
-    private int iTotalPoints;
+    private  MutableLiveData<String> mEmissionPoints;
+    private  MutableLiveData<String> mCovidPoints;
+    private  MutableLiveData<String> mTotalPoints;
 
     public DashboardViewModel() {
 
         mEmissionPoints = new MutableLiveData<>();
-        mEmissionPoints.setValue(this.getPoints(0, getUUID()));
-        //iEmissionPoints = Integer.parseInt(mEmissionPoints.getValue());
+        mEmissionPoints.setValue(this.getPoints(0));
         mCovidPoints = new MutableLiveData<>();
-        mCovidPoints.setValue(this.getPoints(1 , getUUID()));
-        //iCovidPoints = Integer.parseInt(mCovidPoints.getValue());
-        //iTotalPoints = iEmissionPoints + iCovidPoints;
+        mCovidPoints.setValue(this.getPoints(1));
         mTotalPoints = new MutableLiveData<>();
-        mTotalPoints.setValue(this.getPoints(2, getUUID()));
+        mTotalPoints.setValue(this.getPoints(2));
 
     }
 
-    public String getPoints(int db, String UUID){
+    public void setPoints(){
+        mEmissionPoints = new MutableLiveData<>();
+        mEmissionPoints.setValue(this.getPoints(0));
+        mCovidPoints = new MutableLiveData<>();
+        mCovidPoints.setValue(this.getPoints(1));
+        mTotalPoints = new MutableLiveData<>();
+        mTotalPoints.setValue(this.getPoints(2));
+    }
+    public String getPoints(int db){
+        System.out.println(MainActivity.points[db]);
         return String.valueOf(MainActivity.points[db]);
-    }
-    public String getUUID(){
-        String android_id = null;
-        Storage storage = StorageOptions.getDefaultInstance().getService();
-        String m_szDevIDShort = "35" + (Build.BOARD.length() % 10) + (Build.BRAND.length() % 10) + (Build.CPU_ABI.length() % 10) + (Build.DEVICE.length() % 10) + (Build.MANUFACTURER.length() % 10) + (Build.MODEL.length() % 10) + (Build.PRODUCT.length() % 10);
-        try {
-            String serial = Build.class.getField("SERIAL").get(null).toString();
-            android_id = new UUID(m_szDevIDShort.hashCode(), serial.hashCode()).toString();
-            return android_id;
-
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 
     public LiveData<String> getEmissionPoints() {

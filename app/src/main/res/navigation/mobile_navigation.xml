@@ -20,6 +20,6 @@
     <fragment
         android:id="@+id/navigation_leaderboard"
         android:name="com.example.ecohacks.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/leaderboard"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

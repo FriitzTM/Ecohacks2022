@@ -7,4 +7,16 @@
     <string name="total_covid_points">Total Covid Points</string>
     <string name="total_overall_points">Total Overall Points</string>
     <string name="leaderboard">Leaderboard</string>
+    <string name="_1_john">1. John</string>
+    <string name="_200000">200000</string>
+    <string name="_2_jayden">2. Jayden</string>
+    <string name="_19500">19500</string>
+    <string name="_3_alex">3. Alex</string>
+    <string name="_18990">18990</string>
+    <string name="_4_amanda">4. Amanda</string>
+    <string name="_17000">17000</string>
+    <string name="_5_marissa">5. Marissa</string>
+    <string name="_16500">16500</string>
+    <string name="_6_kerry">6. Kerry</string>
+    <string name="_16200">16200</string>
 </resources>

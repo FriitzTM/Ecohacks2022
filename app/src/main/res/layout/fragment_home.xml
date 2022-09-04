@@ -29,16 +29,16 @@
 
             <TextView
                 android:id="@+id/challenge_box_1"
-                android:layout_width="136dp"
-                android:layout_height="62dp"
+                android:layout_width="183dp"
+                android:layout_height="122dp"
                 android:layout_weight="1"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textStyle="bold" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="62dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1" />
 
             <CheckBox
@@ -51,11 +51,11 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="31dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="97dp"
+            android:layout_height="168dp"
             android:orientation="horizontal">
 
             <Space
@@ -65,8 +65,8 @@
 
             <TextView
                 android:id="@+id/challenge_box_2"
-                android:layout_width="105dp"
-                android:layout_height="63dp"
+                android:layout_width="201dp"
+                android:layout_height="97dp"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -87,7 +87,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="27dp" />
+            android:layout_height="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,8 +101,8 @@
 
             <TextView
                 android:id="@+id/Challenge_box_3"
-                android:layout_width="103dp"
-                android:layout_height="48dp"
+                android:layout_width="182dp"
+                android:layout_height="95dp"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -116,7 +116,7 @@
             <CheckBox
                 android:id="@+id/checkBox3"
                 android:layout_width="wrap_content"
-                android:layout_height="74dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="CheckBox" />
         </LinearLayout>
