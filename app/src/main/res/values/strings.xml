@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ecohacks</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="total_emissions_points">Total Emissions Points</string>
+    <string name="total_covid_points">Total Covid Points</string>
+    <string name="total_overall_points">Total Overall Points</string>
+    <string name="leaderboard">Leaderboard</string>
+</resources>
